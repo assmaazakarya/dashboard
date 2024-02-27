@@ -1,0 +1,33 @@
+<section>
+  <!--for demo wrap-->
+ <div class="tbl-header">
+    <table style="border: 0;">
+      <thead>
+        <tr>
+          <th *ngFor="let head of theadforall">{{head}}</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table style="border: 0;">
+      <tbody>
+        <tr *ngFor="let item of tbodyforall">
+          <td>{{item.title}}</td>
+          <td>{{item.image}}</td>
+          <td>{{item.category}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.orderNo}}</td>
+          <td>{{item.ingrediants}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.exclude}}</td>
+          <td>action</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
